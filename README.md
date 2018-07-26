@@ -38,7 +38,7 @@ text for each and writes them out right next to the PDF files.
     % pip install -r requirements.txt
     % ./extract.py
 
-This can take a while, so examine extract.log to see what's going on.
+This can take a while, so examine `extract.log` to see what's going on.
 
 [Internet Research Agency]: https://en.wikipedia.org/wiki/Internet_Research_Agency
 [install instructions]: https://github.com/tesseract-ocr/tesseract/wiki
