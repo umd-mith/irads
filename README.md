@@ -1,8 +1,8 @@
 # irads
 
-This is a scratch space for trying to parse the metadata and images out of the
-3,517 Facebook ads that were reported to have been bought by the [Internet
-Research Agency] and released by Facebook.
+*irads* parses the metadata and images out of the 3,517 Facebook ads that were
+reported to have been bought by the [Internet Research Agency]. These ads were
+released by the House Intelligence Committee as a set of redacted PDF files.
 
 The data:
 
