@@ -12,9 +12,9 @@ https://democrats-intelligence.house.gov/social-media-content/
 
 ## Get started
 
-    git clone https://github.com/edsu/irads.git
-    wget -i urls.txt
-    for f in `ls *.zip`; do unzip $f; done
+    % git clone https://github.com/edsu/irads.git
+    % wget -i urls.txt
+    % for f in `ls *.zip`; do unzip $f; done
 
 
 
