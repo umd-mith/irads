@@ -18,6 +18,47 @@ The results of running the metadata extraction are available as:
 
 * [ads.json](https://raw.githubusercontent.com/edsu/irads/master/ads.json)
 
+Each ad looks something like this:
+
+```json
+{
+  "id": 374,
+  "file": "data/2015-06/P(1)0000054.pdf",
+  "text": "Join us because we care. Black matters.\n",
+  "url": "https://www.facebook.com/BlaCk-Matters-1579673598947501/",
+  "impressions": 137,
+  "clicks": 0,
+  "spend": {
+    "amount": "44.87",
+    "currency": "RUB"
+  },
+  "created": "2015-06-10T02:59:53-07:00",
+  "ended": null,
+  "targeting": {
+    "location": {
+      "united_states": [
+        "Baltimore (+20 km) Maryland",
+        "St. Louis (+20 km) Missouri"
+      ]
+    },
+    "excluded_connections": [
+      "Exclude people who like Black Matters"
+    ],
+    "age": [
+      "18 - 65+"
+    ],
+    "language": [
+      "English (UK)",
+      "English (US)"
+    ],
+    "placements": [
+      "News Feed on desktop computers",
+      "News Feed on mobile devices"
+    ]
+  }
+}
+```
+
 If you would like to run the extraction yourself continue reading.
 
 ## Install Tesseract
