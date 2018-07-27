@@ -12,6 +12,14 @@ The context:
 
 https://democrats-intelligence.house.gov/social-media-content/
 
+## The Data
+
+The results of running the extraction are available as:
+
+* [ads.json](https://raw.githubusercontent.com/edsu/irads/master/ads.json)
+
+If you would like to run the extraction yourself continue reading.
+
 ## Install Tesseract
 
 You will need to install the [Tesseract] OCR engine, which should be as easy as:
