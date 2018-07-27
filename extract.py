@@ -18,11 +18,11 @@ def main():
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 
-    for pdf in glob('data/*/*.pdf'):
-        extract_images(pdf)
+    #for pdf in glob('data/*/*.pdf'):
+    #    extract_images(pdf)
 
-    for png in glob('data/*/*.png'):
-        extract_ocr(png)
+    #for png in glob('data/*/*.png'):
+    #    extract_ocr(png)
 
     items = []
     for ocr in glob('data/*/*-00.txt'):
@@ -88,8 +88,8 @@ def extract_metadata(ocr_file):
         'impressions': match_int('Ad Impressions (.+)', txt),
         'clicks': match_int('Ad Clicks (.+)', txt),
         'spend': {
-            'amount': match('Ad Spend ([0-9\.]+)', txt),
-            'currency': match('Ad Spend [0-9\.]+ (.+)', txt)
+            'amount': '{0:.2f}'.format(match_float('Ad Spend ([0-9,\.]+)', txt)),
+            'currency': match('Ad Spend [0-9,\.]+ (.+)', txt)
         },
         'created': match_datetime('Ad Creation Date (.+)', txt),
         'ended': match_datetime('Ad End Date (.+)', txt),
@@ -119,6 +119,13 @@ def match_int(pattern, string):
         return int(s.replace(',', ''))
     else:
         return 0
+
+def match_float(pattern, string):
+    s = match(pattern, string)
+    f = 0.0
+    if s:
+        f = float(s.replace(',', ''))
+    return f
 
 def match_datetime(pattern, string):
     s = match(pattern, string)
