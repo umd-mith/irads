@@ -33,7 +33,7 @@ Each ad looks something like this:
     "currency": "RUB"
   },
   "created": "2015-06-10T02:59:53-07:00",
-  "ended": null,
+  "ended": "2015-06-15T03:42:51-07:00",
   "targeting": {
     "location": {
       "united_states": [

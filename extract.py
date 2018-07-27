@@ -18,11 +18,11 @@ def main():
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 
-    for pdf in glob('data/*/*.pdf'):
-        extract_images(pdf)
+    #for pdf in glob('data/*/*.pdf'):
+    #    extract_images(pdf)
 
-    for png in glob('data/*/*.png'):
-        extract_ocr(png)
+    #for png in glob('data/*/*.png'):
+    #    extract_ocr(png)
 
     items = []
     for ocr in glob('data/*/*-00.txt'):
