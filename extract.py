@@ -130,7 +130,7 @@ def match_float(pattern, string):
 def match_datetime(pattern, string):
     s = match(pattern, string)
     if s:
-        # clean up ocr
+        # clean up some known ocr edge cases
         if s == '02/03/17 01 32:43 AM PST':
             s = '02/03/17 01:32:43 AM PST'
         if s == '05/17/1612121113 AM PDT':
