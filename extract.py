@@ -82,9 +82,6 @@ def extract_metadata(ocr_file):
             'age': match('Age: (.+)', targeting)
         }
     }
-
-
-
     return m
 
 def match(pattern, string):
