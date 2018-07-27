@@ -9,7 +9,7 @@ def test_metadata1():
     assert m['url'] == 'https://www.facebook.com/brownunitedfront/'
     assert m['impressions'] == 82748
     assert m['clicks'] == 11051
-    assert m['spend'] == {'amount': '440.00', 'denomination': 'RUB'}
+    assert m['spend'] == {'amount': '440.00', 'currency': 'RUB'}
     assert m['created'] == '2017-02-16T00:42:01-08:00'
     assert m['ended'] == '2017-02-18T00:42:01-08:00'
 
@@ -19,16 +19,20 @@ def test_age():
 
 def test_placements():
     m = extract_metadata('test-data/ocr1.txt')
-    assert m['targeting']['placements'] == 'News Feed on desktop computers or News Feed on mobile devices'
-
+    assert m['targeting']['placements'] == [
+        'News Feed on desktop computers',
+        'News Feed on mobile devices'
+    ]
 
 def test_living_in():
     m = extract_metadata('test-data/ocr1.txt')
     assert m['targeting']['living_in'] == 'United States'
 
-def test_language():
+def test_languages():
     m = extract_metadata('test-data/ocr2.txt')
-    assert m['targeting']['language'] == 'English (US)'
+    assert m['targeting']['languages'] == ['English (US)']
+    m = extract_metadata('test-data/ocr3.txt')
+    assert m['targeting']['languages'] == ['English (UK)', 'English (US)']
 
 def test_location():
     m = extract_metadata('test-data/ocr2.txt')
@@ -48,21 +52,22 @@ def test_location():
 
 def test_interests():
     m = extract_metadata('test-data/ocr1.txt')
-    assert m['targeting']['interests'] == [
-        'Hispanic and latino american culture',
-        'Mexico',
-        'Mexican american culture',
-        'Hispanic culture',
-        'Latino culture',
-        'Latin hip hop',
-        'Chicano',
-        'Chicano Movement',
-        'Hispanidad',
-        'Mexican Pride',
-        'Lowrider',
-        'Chicano rap',
-        'La Raza'
+    assert m['targeting']['match'] == [
+        'Interests: Hispanic and latino american culture',
+        'Interests: Mexico',
+        'Interests: Mexican american culture',
+        'Interests: Hispanic culture',
+        'Interests: Latino culture',
+        'Interests: Latin hip hop',
+        'Interests: Chicano',
+        'Interests: Chicano Movement',
+        'Interests: Hispanidad',
+        'Interests: Mexican Pride',
+        'Interests: Lowrider',
+        'Interests: Chicano rap',
+        'Interests: La Raza'
     ]
+
         
 
 

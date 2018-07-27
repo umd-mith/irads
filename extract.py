@@ -65,7 +65,7 @@ def extract_ocr(img_file):
 
 def extract_metadata(ocr_file):
     txt = open(ocr_file).read()
-    targeting = match('(?s)(Ad Targeting .+)Ad Impressions', txt, strip=False)
+    targeting = match('(?s)Ad Targeting (.+Ad Impressions)', txt, strip=False)
     m = {
         'id': match_int('Ad ID (\d+)', txt),
         'text': match('(?s)Ad Text (.+)Ad Landing Page', txt, strip=False),
@@ -74,17 +74,17 @@ def extract_metadata(ocr_file):
         'clicks': match_int('Ad Clicks (.+)', txt),
         'spend': {
             'amount': match('Ad Spend ([0-9\.]+)', txt),
-            'denomination': match('Ad Spend [0-9\.]+ (.+)', txt)
+            'currency': match('Ad Spend [0-9\.]+ (.+)', txt)
         },
         'created': match_datetime('Ad Creation Date (.+)', txt),
         'ended': match_datetime('Ad End Date (.+)', txt),
         'targeting': {
             'age': match('^Age: (.+)', targeting),
-            'language': match('Language: (.+)', targeting),
-            'placements': match('(?s)Placements: (.+)^People', targeting),
-            'living_in': match('(?s)Ad Targeting Location - Living In: (.+)Age:', targeting),
-            'locations': location(match('(?s)Ad Targeting Location: (.+)Age:', targeting)),
-            'interests': interests(match('(?s)People Who Match: Interests: (.+)', targeting))
+            'languages': unpack(match('Language: (.+)', targeting)),
+            'placements': unpack(match('(?s)Placements: (.+)^People', targeting)),
+            'living_in': match('(?s)^Location - Living In: (.+)Age:', targeting),
+            'locations': unpack(match('(?s)^Location: (.+)Age:', targeting), sep=';'),
+            'match': unpack(match('(?s)People Who Match: (.+)((And Must Also Match:)|(Ad Impressions))', targeting))
         }
     }
     return m
@@ -116,22 +116,26 @@ def match_datetime(pattern, string):
         })
         return dt.isoformat()
 
-def location(s):
+def commas(s):
+    if not s:
+        return []
+    parts = [p.strip() for p in s.split(',')]
+    if ' or ' in parts[-1]:
+        p = parts.pop().split(' or ')
+        parts.extend(p)
+    return parts
+
+def unpack(s, sep=','):
     if not s:
         return []
     prefix = ''
     if ':' in s:
         prefix, s = s.split(':', 1)
         prefix = prefix + ': '
-    locs = [prefix + p.strip() for p in s.split(';')]
-    return locs
-
-def interests(s):
-    parts = [p.strip() for p in s.split(',')]
+    parts = s.split(sep)
     if ' or ' in parts[-1]:
-        p = parts.pop().split(' or ')
-        parts.extend(p)
-    return parts
+        parts.extend(parts.pop().split(' or '))
+    return [prefix + p.strip() for p in parts]
 
 if __name__ == "__main__":
     main()
