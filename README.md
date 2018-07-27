@@ -18,7 +18,7 @@ The results of running the metadata extraction are available as:
 
 * [ads.json](https://raw.githubusercontent.com/edsu/irads/master/ads.json)
 
-Each ad looks something like this:
+Each ad is a JSON object in `ads.json` and looks something like this:
 
 ```json
 {
