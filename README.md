@@ -4,15 +4,15 @@
 reported to have been bought by the [Internet Research Agency]. These ads were
 released by the House Intelligence Committee as a set of redacted PDF files.
 
-### The data:
+### The Data:
 
 https://democrats-intelligence.house.gov/social-media-content/social-media-advertisements.htm
 
-### The context:
+### The Context:
 
 https://democrats-intelligence.house.gov/social-media-content/
 
-### The metadata:
+### The Metadata:
 
 The results of running the metadata extraction are available as:
 
