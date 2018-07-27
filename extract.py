@@ -2,13 +2,13 @@
 
 import os
 import re
+import json
 import PyPDF2
 import logging
 import pytesseract
 
 from glob import glob
 from PIL import Image
-from dateutil.tz import gettz
 from dateutil.parser import parse as parse_date
 
 def main():
@@ -17,10 +17,19 @@ def main():
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
+
     for pdf in glob('data/*/*.pdf'):
         extract_images(pdf)
+
     for png in glob('data/*/*.png'):
         extract_ocr(png)
+
+    items = []
+    for ocr in glob('data/*/*-00.txt'):
+        m = extract_metadata(ocr)
+        items.append(m)
+    with open('ads.json', 'w') as fh:
+        json.dump(items, fh, indent=2)
 
 def extract_images(pdf):
     pdf_reader = PyPDF2.PdfFileReader(open(pdf, 'rb'))
@@ -65,9 +74,15 @@ def extract_ocr(img_file):
 
 def extract_metadata(ocr_file):
     txt = open(ocr_file).read()
-    targeting = match('(?s)Ad Targeting (.+Ad Impressions)', txt, strip=False)
+
+    # if 02.txt exists then the text from 00.txt ran over into 01.txt
+    file3 = re.sub('00.txt$', '02.txt', ocr_file)
+    if ocr_file != file3 and os.path.isfile(file3):
+        txt += open(re.sub('00.txt$', '01.txt', ocr_file)).read()
+
     m = {
         'id': match_int('Ad ID (\d+)', txt),
+        'file': ocr_file.replace('-00.txt', '.pdf'),
         'text': match('(?s)Ad Text (.+)Ad Landing Page', txt, strip=False),
         'url': match('Ad Landing Page (.+)', txt),
         'impressions': match_int('Ad Impressions (.+)', txt),
@@ -78,15 +93,13 @@ def extract_metadata(ocr_file):
         },
         'created': match_datetime('Ad Creation Date (.+)', txt),
         'ended': match_datetime('Ad End Date (.+)', txt),
-        'targeting': {
-            'age': match('^Age: (.+)', targeting),
-            'languages': unpack(match('Language: (.+)', targeting)),
-            'placements': unpack(match('(?s)Placements: (.+)^People', targeting)),
-            'living_in': match('(?s)^Location - Living In: (.+)Age:', targeting),
-            'locations': unpack(match('(?s)^Location: (.+)Age:', targeting), sep=';'),
-            'match': unpack(match('(?s)People Who Match: (.+)((And Must Also Match:)|(Ad Impressions))', targeting))
-        }
+        'targeting': targeting(txt)
     }
+
+    if re.match('.+-00.txt$', ocr_file):
+        with open(ocr_file.replace('-00.txt', '.json'), 'w') as fh:
+            json.dump(m, fh, indent=2)
+
     return m
 
 def match(pattern, string, strip=True):
@@ -110,32 +123,78 @@ def match_int(pattern, string):
 def match_datetime(pattern, string):
     s = match(pattern, string)
     if s:
-        dt = parse_date(s, tzinfos={
-            'PDT': -25200,
-            'PST': -28800
-        })
-        return dt.isoformat()
+        # clean up ocr
+        if s == '02/03/17 01 32:43 AM PST':
+            s = '02/03/17 01:32:43 AM PST'
+        if s == '05/17/1612121113 AM PDT':
+            s = '05/17/16 12:21:13 AM PDT'
+        s = re.sub(' :', ':', s)
+        s = re.sub('O', '0', s)
+        s = s.replace('z', ':')
+        m = re.match('^(\d\d/\d\d/\d\d)(\d.+)$', s)
+        if m:
+            s = m.group(1) + ' ' + m.group(2)
+        try:
+            dt = parse_date(s, fuzzy=True, tzinfos={
+                'PDT': -25200,
+                'PST': -28800
+            })
+            return dt.isoformat()
+        except Exception as e:
+            logging.error('unable to convert time %s: %s', s, e)
+            return None
 
-def commas(s):
-    if not s:
-        return []
-    parts = [p.strip() for p in s.split(',')]
-    if ' or ' in parts[-1]:
-        p = parts.pop().split(' or ')
-        parts.extend(p)
-    return parts
+def targeting(s):
+    # this is gnarly but a state machine appears to be required to match
+    # the structure in the Ad Targeting section
+    t = match('(?s)Ad Targeting (.+)Ad Impressions', s, strip=False)
+    meta = {}
+    key = None
+    if not t:
+        return meta
+    for line in t.split('\n'):
+        m = re.match('^([A-Z].+?):(.+)', line)
+        if m:
+            key = m.group(1)
+            line = m.group(2)
+        meta[key] = meta.get(key, '') + ' ' + line
+
+    # lower case the keys and unpack the values if there are comma or 
+    # semicolon delimited lists
+    new_meta = {}
+    for k, v in meta.items():
+        k = k.lower()
+        k = re.sub('[^a-z ]', '', k)
+        k = re.sub(' +', '_', k)
+        sep = ';' if  k == 'location' else ','
+        new_meta[k] = unpack(v, sep)
+
+    return new_meta
 
 def unpack(s, sep=','):
     if not s:
         return []
+    s = re.sub(' +', ' ', s).strip()
+
     prefix = ''
-    if ':' in s:
-        prefix, s = s.split(':', 1)
-        prefix = prefix + ': '
+    m = re.match('^([A-Z].{3,15}?):(.+)', s)
+    if m:
+        prefix = m.group(1).lower().replace(' ', '_')
+        s = m.group(2)
+
     parts = s.split(sep)
+
     if ' or ' in parts[-1]:
         parts.extend(parts.pop().split(' or '))
-    return [prefix + p.strip() for p in parts]
+
+    parts = [p.strip() for p in parts]
+    if prefix:
+        data = {}
+        data[prefix] = parts
+    else:
+        data = parts
+
+    return data
 
 if __name__ == "__main__":
     main()
