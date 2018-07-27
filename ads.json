@@ -18194,10 +18194,8 @@
       ],
       "behaviors": [
         "Multicultural Affinity: Hispanic (US - All)",
-        "Multicultural Affinity:"
-      ],
-      "hispanic_us_english_dominant_or_multicultural_affinity": [
-        "African American (US)"
+        "Multicultural Affinity: Hispanic (US - English dominant)",
+        "Multicultural Affinity: African American (US)"
       ],
       "excluded_connections": [
         "Exclude people who like Don't Shoot"
@@ -21502,13 +21500,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIaokNewsoom",
@@ -21555,13 +21551,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIaokNewsoom",
@@ -21663,13 +21657,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -21719,13 +21711,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIaokNewsoom",
@@ -21775,13 +21765,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -21831,13 +21819,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -22064,13 +22050,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22120,13 +22104,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22176,13 +22158,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22232,13 +22212,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22288,13 +22266,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIaokNewsoom",
@@ -22396,13 +22372,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22504,13 +22478,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22560,13 +22532,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22616,13 +22586,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22672,13 +22640,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22780,13 +22746,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -22836,13 +22800,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -23013,13 +22975,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23066,13 +23026,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23119,13 +23077,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23242,13 +23198,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "behaviors": [
           "African American (US)"
@@ -23349,12 +23303,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -23392,13 +23345,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23445,13 +23396,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23498,13 +23447,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23560,12 +23507,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -23603,13 +23549,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23656,13 +23600,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23718,12 +23660,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -23761,13 +23702,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23814,13 +23753,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -23876,12 +23813,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -23928,12 +23864,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -23980,12 +23915,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -24023,13 +23957,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -25033,13 +24965,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -25089,13 +25019,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -25145,13 +25073,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -25201,13 +25127,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -25257,13 +25181,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -25313,13 +25235,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIaokNewsoom",
@@ -26024,13 +25944,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -26077,13 +25995,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -26212,10 +26128,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -26582,14 +26495,12 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "African American (US)",
+          "Asian American (US)"
         ]
-      },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "African American (US)",
-        "Asian American (US)"
-      ]
+      }
     }
   },
   {
@@ -26630,14 +26541,12 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "African American (US)",
+          "Asian American (US)"
         ]
-      },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "African American (US)",
-        "Asian American (US)"
-      ]
+      }
     }
   },
   {
@@ -26678,14 +26587,12 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "African American (US)",
+          "Asian American (US)"
         ]
-      },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "African American (US)",
-        "Asian American (US)"
-      ]
+      }
     }
   },
   {
@@ -26726,14 +26633,12 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "African American (US)",
+          "Asian American (US)"
         ]
-      },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "African American (US)",
-        "Asian American (US)"
-      ]
+      }
     }
   },
   {
@@ -27594,13 +27499,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "BIackNews.com",
@@ -28383,12 +28286,11 @@
           "Stop Racismll",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -28426,13 +28328,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -28506,13 +28406,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "behaviors": [
           "African American (US)"
@@ -28559,13 +28457,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "behaviors": [
           "African American (US)"
@@ -28615,13 +28511,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -28665,13 +28559,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "behaviors": [
           "African American (US)"
@@ -28730,12 +28622,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -28773,13 +28664,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -29753,10 +29642,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to LGBT United"
+        "United States Friends of connections: Friends of people who are connected to LGBT United"
       ],
       "age": [
         "18 - 54"
@@ -30953,13 +30839,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -31006,13 +30890,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -31116,13 +30998,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "behaviors": [
           "African American (US)"
@@ -31265,12 +31145,9 @@
       "people_who_match": {
         "interests": [
           "BlackNews.com or HuffPost Black Voices",
-          ""
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -33195,10 +33072,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -34383,10 +34257,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to LGBT United"
+        "United States Friends of connections: Friends of people who are connected to LGBT United"
       ],
       "age": [
         "18 - 65+"
@@ -38321,13 +38192,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -39002,10 +38871,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -39046,10 +38912,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -39873,13 +39736,10 @@
       ],
       "people_who_match": {
         "interests": [
-          "Police brutality in the United States",
-          "Stop"
+          "Police brutality in the United States or Stop Police Brutality",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "police_brutality_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -40340,13 +40200,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -40393,13 +40251,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -40446,13 +40302,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -40508,12 +40362,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -40551,13 +40404,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -50162,13 +50013,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -50338,13 +50186,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -50557,13 +50402,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -50733,13 +50575,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -50909,13 +50748,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -51085,13 +50921,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -51261,13 +51094,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -51437,13 +51267,10 @@
       "and_must_also_match": {
         "behaviors": [
           "Facebook access (browser): Firefox",
-          ""
+          "Facebook access (browser): Chrome",
+          "Facebook access (browser): Opera"
         ]
-      },
-      "facebook_access_browser": [
-        "Chrome",
-        "Facebook access (browser): Opera"
-      ]
+      }
     }
   },
   {
@@ -51612,13 +51439,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -51665,13 +51490,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -51920,10 +51743,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -52762,13 +52582,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -52815,13 +52633,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -52978,10 +52794,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to Black Matters"
+        "United States Friends of connections: Friends of people who are connected to Black Matters"
       ],
       "age": [
         "18 - 54"
@@ -56885,12 +56698,11 @@
           "Stop Racism\u201d",
           "Malcolm X Memorial Foundation",
           "Maya Angelou",
-          "Mumia Abu-"
+          "Mumia Abu- Jamal",
+          "The Raw Story or mother jones",
+          "Multicultural Affinity: African American (US)"
         ]
-      },
-      "jamal_the_raw_story_or_mother_jones_multicultural_affinity": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -57392,13 +57204,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -57445,13 +57255,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -59683,31 +59491,27 @@
           "Muslim Brotherhood",
           "Ja'far aI-Sadiq",
           "History of Islam",
-          ""
+          "Medina",
+          "As\u2014salamu alaykum or Islam Book",
+          "School: Islam",
+          "Jesus Christ",
+          "Saudi Arabia or Quran",
+          "Field of study: Arabic",
+          "Islamic studies",
+          "Sharia",
+          "Islamic philosophy or Quran",
+          "Employers: Saudi Aramco",
+          "Mosque",
+          "Muslim",
+          "Islam",
+          "Saudi Arabia",
+          "Quran or Saba University",
+          "Job title: Muslim",
+          "Islam",
+          "Ulama",
+          "Saudi Arabia"
         ]
-      },
-      "medina_assalamu_alaykum_or_islam_book_school": [
-        "Islam",
-        "Jesus Christ",
-        ""
-      ],
-      "saudi_arabia_or_quran_field_of_study": [
-        "Arabic",
-        "Islamic studies",
-        "Sharia",
-        "Islamic philosophy or Quran",
-        "Employers: Saudi Aramco",
-        "Mosque",
-        "Muslim",
-        "Islam",
-        ""
-      ],
-      "saudi_arabia_quran_or_saba_university_job_title": [
-        "Muslim",
-        "Islam",
-        "Ulama",
-        "Saudi Arabia"
-      ]
+      }
     }
   },
   {
@@ -59743,14 +59547,12 @@
           "Donald Trump for President",
           "Fox News Politics",
           "conservative daily",
-          "Donald"
+          "Donald Trump Jr. or Supporting OurVeterans",
+          "Politics: US politics (conservative)",
+          "US politics (very conservative)",
+          "Likely to engage with political content (conservative)"
         ]
-      },
-      "trump_jr_or_supporting_ourveterans_politics": [
-        "US politics (conservative)",
-        "US politics (very conservative)",
-        "Likely to engage with political content (conservative)"
-      ]
+      }
     }
   },
   {
@@ -60453,12 +60255,11 @@
         "interests": [
           "Fight the Power",
           "Black history",
-          "My Black is"
+          "My Black is Beautiful",
+          "Black is beautiful or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "beautiful_black_is_beautiful_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -60499,13 +60300,10 @@
           "Vietnam Vets",
           "Support Our Veterans",
           "Vietnam Veterans Memorial Fund",
-          "Disabled American Veterans",
-          "Veterans"
+          "Disabled American Veterans or Veterans United Network",
+          "Employers: US. Military"
         ]
-      },
-      "united_network_employers": [
-        "US. Military"
-      ]
+      }
     }
   },
   {
@@ -60956,13 +60754,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61009,13 +60805,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61062,13 +60856,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61115,13 +60907,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61168,13 +60958,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61221,13 +61009,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -61826,10 +61612,7 @@
     "ended": null,
     "targeting": {
       "location": [
-        "United States"
-      ],
-      "friends_of_connections": [
-        "Friends of people who are connected to LGBT United"
+        "United States Friends of connections: Friends of people who are connected to LGBT United"
       ],
       "age": [
         "18 - 54"
@@ -63489,13 +63272,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -63615,13 +63396,11 @@
         "behaviors": [
           "Hispanic (US - All)",
           "Hispanic (US - Spanish dominant)",
-          ""
+          "Hispanic (US - English dominant)",
+          "Hispanic (US - Bilingual: English and Spanish)",
+          "Asian American (US)"
         ]
       },
-      "hispanic_us_english_dominant_hispanic_us_bilingual": [
-        "English and Spanish)",
-        "Asian American (US)"
-      ],
       "people_who_match": {
         "interests": [
           "National Museum of American History",
@@ -66257,15 +66036,11 @@
           "Human rights",
           "Social equality",
           "Social justice",
-          ""
+          "Anti-discrimination or Human rights activists",
+          "School: University of New Orleans",
+          "Field of study: Human rights"
         ]
-      },
-      "antidiscrimination_or_human_rights_activists_school": [
-        "University of New"
-      ],
-      "orleans_field_of_study": [
-        "Human rights"
-      ]
+      }
     }
   },
   {
@@ -67318,12 +67093,10 @@
           "Black Panther Party",
           "Black panther",
           "Malcolm X",
-          ""
+          "Black (Color) or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "black_color_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -71774,12 +71547,10 @@
           "Black Panther Party",
           "Black panther",
           "Malcolm X",
-          ""
+          "Black (Color) or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "black_color_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -72298,12 +72069,10 @@
           "Black Panther Party",
           "Black panther",
           "Malcolm X",
-          ""
+          "Black (Color) or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "black_color_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -72797,12 +72566,10 @@
           "Black Panther Party",
           "Black panther",
           "Malcolm X",
-          ""
+          "Black (Color) or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "black_color_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -74815,13 +74582,11 @@
         "interests": [
           "Veterans Day",
           "Wounded Warrior Project",
+          "Support Our Veterans or Disabled American Veterans",
+          "Employers: Veteran",
           ""
         ]
       },
-      "support_our_veterans_or_disabled_american_veterans_employers": [
-        "Veteran",
-        ""
-      ],
       "job_title": [
         "Veteran"
       ],
@@ -74996,12 +74761,10 @@
         "interests": [
           "Pan-Africanism",
           "Women's fashion",
-          "Black"
+          "Black Enterprise or Black (Color)",
+          "Behaviors: Small business owners"
         ]
-      },
-      "enterprise_or_black_color_behaviors": [
-        "Small business owners"
-      ]
+      }
     }
   },
   {
@@ -75090,12 +74853,10 @@
           "Black Women Are Beautiful",
           "Black Enterprise Business Report",
           "Black (Color)",
-          "Black Girls Rock! or"
+          "Black Girls Rock! or HuffPost Black Voices",
+          "Behaviors: Small business owners"
         ]
-      },
-      "huffpost_black_voices_behaviors": [
-        "Small business owners"
-      ]
+      }
     }
   },
   {
@@ -75144,12 +74905,10 @@
           "Black Women Are Beautiful",
           "Black Enterprise Business Report",
           "Black (Color)",
-          "Black Girls Rock! or"
+          "Black Girls Rock! or HuffPost Black Voices",
+          "Behaviors: Small business owners"
         ]
-      },
-      "huffpost_black_voices_behaviors": [
-        "Small business owners"
-      ]
+      }
     }
   },
   {
@@ -75187,12 +74946,10 @@
       "people_who_match": {
         "interests": [
           "Black Economic Empowerment",
-          "Black"
+          "Black Enterprise or Black (Color)",
+          "Behaviors: Small business owners"
         ]
-      },
-      "enterprise_or_black_color_behaviors": [
-        "Small business owners"
-      ]
+      }
     }
   },
   {
@@ -75319,14 +75076,11 @@
           "African-American history",
           "Black is beautiful",
           "Malcolm X",
-          "Black (Color)",
-          "Black"
+          "Black (Color) or Black Girls Rock!",
+          "Behaviors: African American (US)",
+          "Field of study: African- American history"
         ]
-      },
-      "girls_rock_behaviors": [
-        "African American (US)",
-        "Field of study: African- American history"
-      ]
+      }
     }
   },
   {
@@ -75362,12 +75116,10 @@
           "Martin Luther King",
           "Jr.",
           "Black history",
-          "Malcolm"
+          "Malcolm X or Black (Color)",
+          "Field of study: African-American history"
         ]
-      },
-      "x_or_black_color_field_of_study": [
-        "African-American history"
-      ]
+      }
     }
   },
   {
@@ -75498,12 +75250,10 @@
           "African-American history",
           "Malcolm X",
           "Black (Color)",
-          "Black Girls Rock! or"
+          "Black Girls Rock! or HuffPost Black Voices",
+          "Behaviors: African American (US)"
         ]
-      },
-      "huffpost_black_voices_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -75908,12 +75658,11 @@
           "Second Amendment to the United States Constitution",
           "Concealed carry in the United States",
           "Gun Rights",
-          "National Association for"
+          "National Association for Gun Rights",
+          "Guns & Ammo or Gun Rights Across America",
+          "Employers: Gun Owners of America"
         ]
       },
-      "gun_rights_guns_ammo_or_gun_rights_across_america_employers": [
-        "Gun Owners of America"
-      ],
       "and_must_also_match": {
         "interests": [
           "2nd Amendment"
@@ -76419,14 +76168,11 @@
       ],
       "people_who_match": {
         "interests": [
-          "Republican Party (United States)",
-          "Gun"
+          "Republican Party (United States) or Gun Owners of America",
+          "Politics: US politics (conservative)",
+          "Likely to engage with political content (conservative)"
         ]
       },
-      "owners_of_america_politics": [
-        "US politics (conservative)",
-        "Likely to engage with political content (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "Donald Trump for President"
@@ -76505,14 +76251,11 @@
       ],
       "people_who_match": {
         "interests": [
-          "Republican Party (United States)",
-          "Gun"
+          "Republican Party (United States) or Gun Owners of America",
+          "Politics: US politics (conservative)",
+          "Likely to engage with political content (conservative)"
         ]
       },
-      "owners_of_america_politics": [
-        "US politics (conservative)",
-        "Likely to engage with political content (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "Donald Trump for President"
@@ -77164,12 +76907,10 @@
           "Black Panther Party",
           "Black panther",
           "Malcolm X",
-          ""
+          "Black (Color) or Cop Block",
+          "Behaviors: African American (US)"
         ]
-      },
-      "black_color_or_cop_block_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -77328,18 +77069,13 @@
           "National Rifle Association",
           "Donald Trump",
           "Republican Party (United States)",
-          "Gun"
+          "Gun Owners of America or Donald Trump for President",
+          "Employers: NYPD or US. Army Reserve",
+          "Industry: Military (Global) or Veterans (US)",
+          "Politics: US politics (conservative)",
+          "US politics (very conservative)"
         ]
-      },
-      "owners_of_america_or_donald_trump_for_president_employers": [
-        "NYPD",
-        "US."
-      ],
-      "army_reserve_industry": [
-        "Military (Global) or Veterans (US)",
-        "Politics: US politics (conservative)",
-        "US politics (very conservative)"
-      ]
+      }
     }
   },
   {
@@ -83756,12 +83492,11 @@
           "Roman Catholic devotions",
           "Baptism",
           "Presbyterianism",
-          "African-American Civil Rights"
+          "African-American Civil Rights Movement (1954\u201468)",
+          "African-American history or Gospel",
+          "Behaviors: African American (US)"
         ]
       },
-      "movement_africanamerican_history_or_gospel_behaviors": [
-        "African American (US)"
-      ],
       "and_must_also_match": {
         "interests": [
           "Word of Faith",
@@ -89582,13 +89317,11 @@
       "and_must_also_match": {
         "interests": [
           "Evangelicalism",
-          "Protestantism or"
+          "Protestantism or Presbyterianism",
+          "Employers: Jesus Christ is my King",
+          "Jesus Daily"
         ]
-      },
-      "presbyterianism_employers": [
-        "Jesus Christ is my King",
-        "Jesus Daily"
-      ]
+      }
     }
   },
   {
@@ -93096,11 +92829,6 @@
     "created": "2017-01-26T04:29:45-08:00",
     "ended": "2017-01-28T04:29:45-08:00",
     "targeting": {
-      "location_recently_in": {
-        "united_states": [
-          "Palo Alto (+10 mi) California"
-        ]
-      },
       "age": [
         "18 - 65+"
       ],
@@ -99976,12 +99704,11 @@
           "Criminal justice",
           "Conviction",
           "African-American Civil Rights Movement (1954\u201468)",
-          "Black History"
+          "Black History Month",
+          "African-American history or Malcolm X",
+          "Behaviors: African American (US)"
         ]
-      },
-      "month_africanamerican_history_or_malcolm_x_behaviors": [
-        "African American (US)"
-      ]
+      }
     }
   },
   {
@@ -120360,12 +120087,10 @@
           "& American Freedom",
           "Preserve our right to keep and bear arms",
           "Gun Rights",
-          ""
+          "Guns & Weapons or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_weapons_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "Right to keep and bear arms",
@@ -120424,12 +120149,10 @@
           "& American Freedom",
           "Preserve our right to keep and bear arms",
           "Gun Rights",
-          ""
+          "Guns & Weapons or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_weapons_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "AR-15",
@@ -120487,12 +120210,10 @@
           "& American Freedom",
           "Preserve our right to keep and bear arms",
           "Gun Rights",
-          ""
+          "Guns & Weapons or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_weapons_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "AR-15",
@@ -120550,12 +120271,10 @@
           "& American Freedom",
           "Preserve our right to keep and bear arms",
           "Gun Rights",
-          ""
+          "Guns & Weapons or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_weapons_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "2nd Amendment",
@@ -121600,12 +121319,11 @@
       "people_who_match": {
         "interests": [
           "The Second Amendment",
-          "Anything About"
+          "Anything About Guns",
+          "Gun Rights or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_gun_rights_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "Right to keep and bear arms",
@@ -121656,12 +121374,11 @@
       "people_who_match": {
         "interests": [
           "The Second Amendment",
-          "Anything About"
+          "Anything About Guns",
+          "Gun Rights or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_gun_rights_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "AR-15",
@@ -121711,12 +121428,11 @@
       "people_who_match": {
         "interests": [
           "The Second Amendment",
-          "Anything About"
+          "Anything About Guns",
+          "Gun Rights or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_gun_rights_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "AR-15",
@@ -121766,12 +121482,11 @@
       "people_who_match": {
         "interests": [
           "The Second Amendment",
-          "Anything About"
+          "Anything About Guns",
+          "Gun Rights or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "guns_gun_rights_or_second_amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "2nd Amendment",
@@ -121818,13 +121533,10 @@
       ],
       "people_who_match": {
         "interests": [
-          "The Second Amendment",
-          "Second"
+          "The Second Amendment or Second Amendment Supporters",
+          "Politics: US politics (conservative)"
         ]
       },
-      "amendment_supporters_politics": [
-        "US politics (conservative)"
-      ],
       "and_must_also_match": {
         "interests": [
           "2nd Amendment",
@@ -127738,12 +127450,10 @@
           "Jr.",
           "African- American Civil Rights Movement (1954\u201468)",
           "African-American history",
-          "Syria-"
+          "Syria- News or Malcolm X",
+          "Employers: Syria"
         ]
-      },
-      "news_or_malcolm_x_employers": [
-        "Syria"
-      ]
+      }
     }
   },
   {
@@ -133096,12 +132806,10 @@
           "Jr.",
           "African\u2014American culture",
           "African-American Civil Rights Movement (1954\u201468)",
-          "Angela Davis or"
+          "Angela Davis or Malcolm X",
+          "Field of study: African-American history"
         ]
-      },
-      "malcolm_x_field_of_study": [
-        "African-American history"
-      ]
+      }
     }
   },
   {

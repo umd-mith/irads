@@ -79,3 +79,13 @@ def test_people_who_match():
         'People who like LGBT United',
         'Friends of connections: Friends of people who are connected to LGBT United'
     ]
+
+def test_targeting_edge_case():
+    m = extract_metadata('test-data/ocr5.txt')
+    assert m['targeting']['exclude']['behaviors'] == [
+        'Hispanic (US - All)',
+        'Hispanic (US - Spanish dominant)',
+        'Hispanic (US - English dominant)',
+        'Hispanic (US - Bilingual: English and Spanish)',
+        'Asian American (US)'
+    ]

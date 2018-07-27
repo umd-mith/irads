@@ -153,11 +153,12 @@ def targeting(s):
     if not t:
         return meta
     for line in t.split('\n'):
-        m = re.match('^([A-Z].+?):(.+)', line)
+        m = re.match('^([A-Z].{1,20}?):(.+)', line)
         if m:
             key = m.group(1)
             line = m.group(2)
-        meta[key] = meta.get(key, '') + ' ' + line
+        if key:
+            meta[key] = meta.get(key, '') + ' ' + line
 
     # lower case the keys and unpack the values if there are comma or 
     # semicolon delimited lists
@@ -177,7 +178,7 @@ def unpack(s, sep=','):
     s = re.sub(' +', ' ', s).strip()
 
     prefix = ''
-    m = re.match('^([A-Z].{3,15}?):(.+)', s)
+    m = re.match('^([A-Z].{1,20}?):(.+)', s)
     if m:
         prefix = m.group(1).lower().replace(' ', '_')
         s = m.group(2)
