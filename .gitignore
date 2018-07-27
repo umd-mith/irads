@@ -1,2 +1,5 @@
 data/*
 *.log
+.pytest_cache/
+Pipfile*
+__pycache__/

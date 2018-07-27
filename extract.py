@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
 import os
+import re
 import PyPDF2
 import logging
 import pytesseract
 
 from glob import glob
 from PIL import Image
+from dateutil.tz import gettz
+from dateutil.parser import parse as parse_date
 
 def main():
     logging.basicConfig(
@@ -59,6 +62,49 @@ def extract_ocr(img_file):
             logging.info('wrote ocr to %s', ocr_file)
         except Exception as e:
             logging.error('unable to ocr %s: %s', img_file, e)
+
+def extract_metadata(ocr_file):
+    txt = open(ocr_file).read()
+    targeting = match('(?s)Ad Targeting (.+)Ad Impressions', txt)
+    m = {
+        'id': match('Ad ID (\d+)', txt),
+        'text': match('(?s)Ad Text (.+)Ad Landing Page', txt),
+        'url': match('Ad Landing Page (.+)', txt),
+        'impressions': match_int('Ad Impressions (.+)', txt),
+        'clicks': match_int('Ad Clicks (.+)', txt),
+        'spend': {
+            'amount': match('Ad Spend ([0-9\.]+)', txt),
+            'denomination': match('Ad Spend [0-9\.]+ (.+)', txt)
+        },
+        'created': match_datetime('Ad Creation Date (.+)', txt),
+        'ended': match_datetime('Ad End Date (.+)', txt),
+        'targeting': {
+            'age': match('Age: (.+)', targeting)
+        }
+    }
+
+
+
+    return m
+
+def match(pattern, string):
+    m = re.search(pattern, string, re.MULTILINE)
+    if m:
+        return m.group(1).strip()
+
+def match_int(pattern, string):
+    s = match(pattern, string)
+    if s:
+        return int(s.replace(',', ''))
+    else:
+        return 0
+
+
+def match_datetime(pattern, string):
+    s = match(pattern, string)
+    if s:
+        dt = parse_date(s, tzinfos={'PST': -28800})
+        return dt.isoformat() + 'Z'
 
 if __name__ == "__main__":
     main()

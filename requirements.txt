@@ -1,4 +1,6 @@
-PyPDF2
+pytz
 Pillow
+PyPDF2
+pytest
 pytesseract
-
+python-dateutil
