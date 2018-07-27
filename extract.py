@@ -23,7 +23,7 @@ def extract_images(pdf):
     pdf_reader = PyPDF2.PdfFileReader(open(pdf, 'rb'))
     num_pages = pdf_reader.getNumPages()
     for page_num in range(0, num_pages):
-        logging.info('extracting page %s from %s', page_num, pdf)
+        logging.info('extracting page %s from %s', page_num + 1, pdf)
         page = pdf_reader.getPage(page_num)
         try:
             objects = page['/Resources']['/XObject'].getObject()
