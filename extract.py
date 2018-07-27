@@ -67,7 +67,7 @@ def extract_metadata(ocr_file):
     txt = open(ocr_file).read()
     targeting = match('(?s)Ad Targeting (.+)Ad Impressions', txt)
     m = {
-        'id': match('Ad ID (\d+)', txt),
+        'id': match_int('Ad ID (\d+)', txt),
         'text': match('(?s)Ad Text (.+)Ad Landing Page', txt),
         'url': match('Ad Landing Page (.+)', txt),
         'impressions': match_int('Ad Impressions (.+)', txt),
