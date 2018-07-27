@@ -100,7 +100,7 @@ def match_datetime(pattern, string):
     s = match(pattern, string)
     if s:
         dt = parse_date(s, tzinfos={'PST': -28800})
-        return dt.isoformat() + 'Z'
+        return dt.isoformat()
 
 if __name__ == "__main__":
     main()

@@ -10,8 +10,8 @@ def test_metadata():
     assert m['impressions'] == 82748
     assert m['clicks'] == 11051
     assert m['spend'] == {'amount': '440.00', 'denomination': 'RUB'}
-    assert m['created'] == '2017-02-16T00:42:01-08:00Z'
-    assert m['ended'] == '2017-02-18T00:42:01-08:00Z'
+    assert m['created'] == '2017-02-16T00:42:01-08:00'
+    assert m['ended'] == '2017-02-18T00:42:01-08:00'
     assert m['targeting'] == {
         'age': '18 - 65+'
     }
