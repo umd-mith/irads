@@ -99,7 +99,6 @@ def match_int(pattern, string):
     else:
         return 0
 
-
 def match_datetime(pattern, string):
     s = match(pattern, string)
     if s:
