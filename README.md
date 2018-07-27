@@ -12,9 +12,9 @@ The context:
 
 https://democrats-intelligence.house.gov/social-media-content/
 
-## The Data
+The metadata:
 
-The results of running the extraction are available as:
+The results of running the metadata extraction are available as:
 
 * [ads.json](https://raw.githubusercontent.com/edsu/irads/master/ads.json)
 
