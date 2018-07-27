@@ -65,10 +65,10 @@ def extract_ocr(img_file):
 
 def extract_metadata(ocr_file):
     txt = open(ocr_file).read()
-    targeting = match('(?s)Ad Targeting (.+)Ad Impressions', txt)
+    targeting = match('(?s)(Ad Targeting .+)Ad Impressions', txt, strip=False)
     m = {
         'id': match_int('Ad ID (\d+)', txt),
-        'text': match('(?s)Ad Text (.+)Ad Landing Page', txt),
+        'text': match('(?s)Ad Text (.+)Ad Landing Page', txt, strip=False),
         'url': match('Ad Landing Page (.+)', txt),
         'impressions': match_int('Ad Impressions (.+)', txt),
         'clicks': match_int('Ad Clicks (.+)', txt),
@@ -79,15 +79,26 @@ def extract_metadata(ocr_file):
         'created': match_datetime('Ad Creation Date (.+)', txt),
         'ended': match_datetime('Ad End Date (.+)', txt),
         'targeting': {
-            'age': match('Age: (.+)', targeting)
+            'age': match('^Age: (.+)', targeting),
+            'language': match('Language: (.+)', targeting),
+            'placements': match('(?s)Placements: (.+)^People', targeting),
+            'living_in': match('(?s)Ad Targeting Location - Living In: (.+)Age:', targeting),
+            'locations': location(match('(?s)Ad Targeting Location: (.+)Age:', targeting)),
+            'interests': interests(match('(?s)People Who Match: Interests: (.+)', targeting))
         }
     }
     return m
 
-def match(pattern, string):
+def match(pattern, string, strip=True):
     m = re.search(pattern, string, re.MULTILINE)
-    if m:
-        return m.group(1).strip()
+    if not m:
+        return None
+    s = m.group(1)
+    if strip:
+        s = s.replace('\n', ' ')
+        s = re.sub(' +', ' ', s)
+        s = s.strip()
+    return s
 
 def match_int(pattern, string):
     s = match(pattern, string)
@@ -99,8 +110,28 @@ def match_int(pattern, string):
 def match_datetime(pattern, string):
     s = match(pattern, string)
     if s:
-        dt = parse_date(s, tzinfos={'PST': -28800})
+        dt = parse_date(s, tzinfos={
+            'PDT': -25200,
+            'PST': -28800
+        })
         return dt.isoformat()
+
+def location(s):
+    if not s:
+        return []
+    prefix = ''
+    if ':' in s:
+        prefix, s = s.split(':', 1)
+        prefix = prefix + ': '
+    locs = [prefix + p.strip() for p in s.split(';')]
+    return locs
+
+def interests(s):
+    parts = [p.strip() for p in s.split(',')]
+    if ' or ' in parts[-1]:
+        p = parts.pop().split(' or ')
+        parts.extend(p)
+    return parts
 
 if __name__ == "__main__":
     main()
