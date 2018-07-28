@@ -16,7 +16,7 @@ https://democrats-intelligence.house.gov/social-media-content/
 
 The results of running the metadata extraction are available as:
 
-* [index.json](https://raw.githubusercontent.com/edsu/irads/master/site/index.json)
+* [https://raw.githubusercontent.com/edsu/irads/master/site/index.json](https://raw.githubusercontent.com/edsu/irads/master/site/index.json)
 
 Each ad is a JSON object in `index.json` and looks something like this:
 
