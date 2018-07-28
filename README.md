@@ -62,7 +62,7 @@ Each ad is a JSON object in `index.json` and looks something like this:
 ```
 
 In addition a cropped image of the supplied post will be included in the
-`site/images` directory, and is linked from the JSON object using the `.image`
+`site/images` directory, which is linked from the JSON object using the `.image`
 property.
 
 ## Build
