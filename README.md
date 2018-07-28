@@ -24,7 +24,8 @@ Each ad is a JSON object in `index.json` and looks something like this:
 ```json
 {
   "id": 374,
-  "file": "data/2015-06/P(1)0000054.pdf",
+  "pdf": "data/2015-06/P(1)0000054.pdf",
+  "image": "site/images/374.png",
   "text": "Join us because we care. Black matters.\n",
   "url": "https://www.facebook.com/BlaCk-Matters-1579673598947501/",
   "impressions": 137,
