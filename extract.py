@@ -18,11 +18,13 @@ def main():
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 
+    '''
     for pdf in glob('data/*/*.pdf'):
         extract_images(pdf)
 
     for png in glob('data/*/*.png'):
         extract_ocr(png)
+    '''
 
     write_site()
 
@@ -151,7 +153,7 @@ def targeting(s):
     if not t:
         return meta
     for line in t.split('\n'):
-        m = re.match('^([A-Z].{1,20}?):(.+)', line)
+        m = re.match('^([A-Z].{1,25}?):(.+)', line)
         if m:
             key = m.group(1)
             line = m.group(2)
@@ -166,7 +168,10 @@ def targeting(s):
         k = re.sub('[^a-z ]', '', k)
         k = re.sub(' +', '_', k)
         sep = ';' if  k == 'location' else ','
-        new_meta[k] = unpack(v, sep)
+        if k == "custom_audience":
+            new_meta[k] = v.strip()
+        else:
+            new_meta[k] = unpack(v, sep)
 
     return new_meta
 
@@ -176,7 +181,7 @@ def unpack(s, sep=','):
     s = re.sub(' +', ' ', s).strip()
 
     prefix = ''
-    m = re.match('^([A-Z].{1,20}?):(.+)', s)
+    m = re.match('^([A-Z].{1,25}?):(.+)', s)
     if m:
         prefix = m.group(1).lower().replace(' ', '_')
         s = m.group(2)
@@ -202,8 +207,10 @@ def write_site():
         if m['id']:
             post_file = pick_post_image(m['file'])
             img_file = 'images/{:04d}.png'.format(m['id'])
-            crop(post_file, 'site/' + img_file)
+            if not os.path.isfile('site/' + img_file):
+                crop(post_file, 'site/' + img_file)
             m['image'] = img_file
+            logging.info('got metadata for item %s', m['id'])
             items.append(m)
 
     with open('site/index.json', 'w') as fh:
@@ -238,6 +245,7 @@ def crop(path, new_path):
         new_img = new_img.resize((new_w, new_h), Image.ANTIALIAS)
 
         # save
+        logging.info('saving cropped image %s', new_path)
         new_img.save(new_path)
 
 def pick_post_image(pdf_file):
