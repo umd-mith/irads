@@ -18,17 +18,20 @@ def main():
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 
-    '''
     for pdf in glob('data/*/*.pdf'):
         extract_images(pdf)
 
     for png in glob('data/*/*.png'):
         extract_ocr(png)
-    '''
 
     write_site()
 
 def extract_images(pdf):
+    img_file = pdf.replace('.pdf', '-00.png')
+    if os.path.isfile(img_file):
+        logging.info('%s already exists, skipping', img_file) 
+        return
+        
     pdf_reader = PyPDF2.PdfFileReader(open(pdf, 'rb'))
     num_pages = pdf_reader.getNumPages()
     for page_num in range(0, num_pages):
@@ -79,7 +82,7 @@ def extract_metadata(ocr_file):
 
     m = {
         'id': match_int('Ad ID (\d+)', txt),
-        'file': ocr_file.replace('-00.txt', '.pdf'),
+        'pdf': ocr_file.replace('-00.txt', '.pdf'),
         'text': match('(?s)Ad Text (.+)Ad Landing Page', txt, strip=False),
         'url': match('Ad Landing Page (.+)', txt),
         'impressions': match_int('Ad Impressions (.+)', txt),
@@ -204,19 +207,29 @@ def write_site():
     items = []
     for ocr in glob('data/*/*-00.txt'):
         m = extract_metadata(ocr)
-        if m['id']:
-            post_file = pick_post_image(m['file'])
+        if not m['id']:
+            logging.warn('missing id %s, skipping', m['pdf'])
+            continue
+
+        post_file = pick_post_image(m['pdf'])
+        if post_file:
             img_file = 'images/{:04d}.png'.format(m['id'])
             if not os.path.isfile('site/' + img_file):
                 crop(post_file, 'site/' + img_file)
             m['image'] = img_file
-            logging.info('got metadata for item %s', m['id'])
-            items.append(m)
+        else:
+            m['image'] = None
+            logging.info('no post image found for id=%s %s', m['id'], m['pdf'])
+
+        logging.info('got metadata for id=%s %s', m['id'], m['pdf'])
+        items.append(m)
 
     with open('site/index.json', 'w') as fh:
         json.dump(items, fh, indent=2)
+        logging.info('wrote site/index.json with %s items', len(items))
 
 def crop(path, new_path):
+    logging.info('cropping %s as %s', path, new_path)
     im = Image.open(path)
     w, h = im.size
 
@@ -251,6 +264,8 @@ def crop(path, new_path):
 def pick_post_image(pdf_file):
     stem = pdf_file.replace('.pdf', '*.png')
     files = glob(stem)
+    if len(files) == 1:
+        return None
     files.sort()
     return files[-1]
 
