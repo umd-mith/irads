@@ -17,7 +17,7 @@ https://democrats-intelligence.house.gov/social-media-content/
 The results of running the metadata extraction are available here in this
 repository, or at this URL:
 
-* [https://raw.githubusercontent.com/edsu/irads/master/site/index.json](https://raw.githubusercontent.com/edsu/irads/master/site/index.json)
+https://raw.githubusercontent.com/edsu/irads/master/site/index.json
 
 Each ad is a JSON object in `index.json` and looks something like this:
 
@@ -61,9 +61,17 @@ Each ad is a JSON object in `index.json` and looks something like this:
 }
 ```
 
-If you would like to run the extraction yourself continue reading.
+In addition a cropped image of the supplied post will be included in the
+`site/images` directory, and is linked from the JSON object using the `.image`
+property.
 
-## Install Tesseract
+## Build
+
+Here are the steps for downloading the original data and generating the
+extracted metadata yourself. This could be useful if you want to tweak the
+extraction process.
+
+### Install Tesseract
 
 You will need to install the [Tesseract] OCR engine, which should be as easy as:
 
@@ -71,14 +79,14 @@ You will need to install the [Tesseract] OCR engine, which should be as easy as:
 
 For Linux, Windows, and more please check out the [install instructions].
 
-## Get the Data
+### Get the Data
 
     % git clone https://github.com/edsu/irads.git
     % cd irads/data
     % wget -i urls.txt
     % for f in `ls *.zip`; do unzip $f; done
 
-## Extract the Images and OCR
+### Extract the Images and OCR
 
 The PDFs contain multiple pages each with an embedded image. The first page is
 typically a page of metadata, and the second is a screencap of a Facebook post
