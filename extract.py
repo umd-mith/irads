@@ -253,8 +253,13 @@ def crop(path, new_path):
         new_img = im.crop(bbox)
 
         # resize
-        new_h = 400
-        new_w = int(new_h * ((bbox[2] - bbox[0]) / (bbox[3] - bbox[1])))
+        w, h = new_img.size
+        if w > h:
+            new_w = 800 
+            new_h = int(new_w * (h / w))
+        else:
+            new_h = 800
+            new_w = int(new_h * (w / h))
         new_img = new_img.resize((new_w, new_h), Image.ANTIALIAS)
 
         # save
