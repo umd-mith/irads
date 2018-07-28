@@ -1,6 +1,6 @@
 import pytest
 
-from extract import extract_metadata, unpack
+from extract import extract_metadata, unpack, crop
 
 def test_unpack():
     assert unpack('Interests: Music, Mexico, M&Ms') == {
@@ -89,3 +89,6 @@ def test_targeting_edge_case():
         'Hispanic (US - Bilingual: English and Spanish)',
         'Asian American (US)'
     ]
+
+def test_crop():
+    crop('test-data/image.png', 'test-data/image-cropped.png')

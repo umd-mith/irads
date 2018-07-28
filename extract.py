@@ -8,7 +8,7 @@ import logging
 import pytesseract
 
 from glob import glob
-from PIL import Image
+from PIL import Image, ImageChops
 from dateutil.parser import parse as parse_date
 
 def main():
@@ -24,12 +24,7 @@ def main():
     for png in glob('data/*/*.png'):
         extract_ocr(png)
 
-    items = []
-    for ocr in glob('data/*/*-00.txt'):
-        m = extract_metadata(ocr)
-        items.append(m)
-    with open('ads.json', 'w') as fh:
-        json.dump(items, fh, indent=2)
+    write_site()
 
 def extract_images(pdf):
     pdf_reader = PyPDF2.PdfFileReader(open(pdf, 'rb'))
@@ -95,10 +90,6 @@ def extract_metadata(ocr_file):
         'ended': match_datetime('Ad End Date (.+)', txt),
         'targeting': targeting(txt)
     }
-
-    if re.match('.+-00.txt$', ocr_file):
-        with open(ocr_file.replace('-00.txt', '.json'), 'w') as fh:
-            json.dump(m, fh, indent=2)
 
     return m
 
@@ -203,6 +194,51 @@ def unpack(s, sep=','):
         data = parts
 
     return data
+
+def write_site():
+    items = []
+    for ocr in glob('data/*/*-00.txt'):
+        m = extract_metadata(ocr)
+        if m['id']:
+            post_file = pick_post_image(m['file'])
+            img_file = 'images/{:04d}.png'.format(m['id'])
+            crop(post_file, 'site/' + img_file)
+            m['image'] = img_file
+            items.append(m)
+
+    with open('site/index.json', 'w') as fh:
+        json.dump(items, fh, indent=2)
+
+def crop(path, new_path):
+    im = Image.open(path)
+    w, h = im.size
+    im = im.crop((0, 0, w, h - 100))
+
+    bg = Image.new(im.mode, im.size, im.getpixel((0,0)))
+    diff = ImageChops.difference(im, bg)
+    diff = ImageChops.add(diff, diff, 2.0, -100)
+    bbox = diff.getbbox()
+    if bbox:
+        # add a margin
+        m = 50 
+        bbox = (bbox[0] - m, bbox[1] - m, bbox[2] + m, bbox[3] + m)
+
+        # crop
+        new_img = im.crop(bbox)
+
+        # resize
+        new_h = 400
+        new_w = int(new_h * ((bbox[2] - bbox[0]) / (bbox[3] - bbox[1])))
+        new_img = new_img.resize((new_w, new_h), Image.ANTIALIAS)
+
+        # save
+        new_img.save(new_path)
+
+def pick_post_image(pdf_file):
+    stem = pdf_file.replace('.pdf', '*.png')
+    files = glob(stem)
+    files.sort()
+    return files[-1]
 
 if __name__ == "__main__":
     main()

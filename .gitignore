@@ -3,3 +3,4 @@ data/*
 .pytest_cache/
 Pipfile*
 __pycache__/
+test-data/image-cropped.png
