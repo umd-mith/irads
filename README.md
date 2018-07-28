@@ -14,7 +14,8 @@ https://democrats-intelligence.house.gov/social-media-content/
 
 ### The Metadata:
 
-The results of running the metadata extraction are available as:
+The results of running the metadata extraction are available here in this
+repository, or at this URL:
 
 * [https://raw.githubusercontent.com/edsu/irads/master/site/index.json](https://raw.githubusercontent.com/edsu/irads/master/site/index.json)
 
