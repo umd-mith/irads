@@ -212,12 +212,18 @@ def write_site():
 def crop(path, new_path):
     im = Image.open(path)
     w, h = im.size
+
+    # remove the bottom portion of he image that contains some text
+    # that seems to confuse cropping
     im = im.crop((0, 0, w, h - 100))
 
+    # get the bounding box of the central region of he image
     bg = Image.new(im.mode, im.size, im.getpixel((0,0)))
     diff = ImageChops.difference(im, bg)
     diff = ImageChops.add(diff, diff, 2.0, -100)
     bbox = diff.getbbox()
+
+    # crop the image and save it
     if bbox:
         # add a margin
         m = 50 
