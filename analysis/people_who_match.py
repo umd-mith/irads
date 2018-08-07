@@ -14,6 +14,6 @@ for ad in json.load(open('ads.json')):
             clicks[s] += ad['clicks']
             impressions[s] += ad['impressions']
 
-print("money,clicks,impressions,people_who_match")
+print("money (RUB),clicks,impressions,people_who_match")
 for name, amount in money.most_common():
     print('{:.2f},{},{},{}'.format(amount, clicks[name], impressions[name], name))
