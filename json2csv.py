@@ -20,11 +20,11 @@ out = csv.DictWriter(open('ads.csv', 'w'), fieldnames=[
     'location',
     'residence',
     'match',
-    'interests',
-    'excludes',
+    'interest',
+    'exclude',
     'language',
     'age',
-    'placements'
+    'placement'
 ])
 
 def unpack(item, *keys):
@@ -67,10 +67,10 @@ for item in json.load(open('ads.json')):
         'currency': item['spend']['currency'],
         'location': unpack(item, 'targeting', 'location', 'united_states'),
         'residence': unpack(item, 'targeting', 'location_living_in', 'united_states'),
-        'interests': unpack(item, 'targeting', 'interests'),
+        'interest': unpack(item, 'targeting', 'interests'),
         'match': unpack(item, 'targeting', 'people_who_match'),
-        'excludes': unpack(item, 'targeting', 'excluded_connections'),
+        'exclude': unpack(item, 'targeting', 'excluded_connections'),
         'age': unpack(item, 'age'),
         'language': unpack(item, 'targeting', 'language'),
-        'placements': unpack(item, 'targeting', 'placements'),
+        'placement': unpack(item, 'targeting', 'placements'),
     })
