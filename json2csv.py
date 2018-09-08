@@ -21,21 +21,38 @@ out = csv.DictWriter(open('site/index.csv', 'w'), fieldnames=[
     'residence',
     'match',
     'interest',
+    'behavior',
+    'politics',
+    'multicultural_affinity',
+    'employer',
+    'industry',
+    'field_of_study',
     'exclude',
     'language',
     'age',
     'placement'
 ])
 
-def unpack(item, *keys):
+
+def unpack(item, *keys, none=True):
+    '''
+    extract data from parsed JSON using the provided keys. It will
+    return a string, where multiple values are separated with a pipe
+    if the extracted data resolves to a dictionary or any of the
+    provided keys do not exist then None will be returned. If the
+    none parameter is set to False then an empty string will be returned
+    instead of None when there is no match.
+    '''
     d = item
     for k in keys:
         if k in d:
             d = d[k]
         else:
-            return None
+            return None if none else ''
     if type(d) == list:
         return '|'.join(d)
+    elif type(d) == dict:
+        return None if none else ''
     else:
         return d
 
@@ -59,6 +76,11 @@ for item in json.load(open('site/index.json')):
     else:
         image = None
 
+    # interests show up in two places in the json
+    interest = unpack(item, 'targeting', 'interests', none=False) + '|'
+    interest += unpack(item, 'targeting', 'people_who_match', 'interests', none=False)
+    interest = interest.strip('|')
+
     out.writerow({
         'id': item['id'],
         'image': image,
@@ -74,7 +96,13 @@ for item in json.load(open('site/index.json')):
         'currency': item['spend']['currency'],
         'location': unpack(item, 'targeting', 'location', 'united_states'),
         'residence': unpack(item, 'targeting', 'location_living_in', 'united_states'),
-        'interest': unpack(item, 'targeting', 'interests'),
+        'interest': interest,
+        'behavior': unpack(item, 'targeting' 'behavior'),
+        'politics': unpack(item, 'targeting', 'politics'),
+        'multicultural_affinity': unpack(item, 'targeting', 'multicultural_affinity'),
+        'employer': unpack(item, 'targeting', 'employers'),
+        'industry': unpack(item, 'targeting', 'industry'),
+        'field_of_study': unpack(item, 'targeting', 'field_of_study'),
         'match': unpack(item, 'targeting', 'people_who_match'),
         'exclude': unpack(item, 'targeting', 'excluded_connections'),
         'age': unpack(item, 'age'),

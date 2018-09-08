@@ -180,6 +180,8 @@ def targeting(s):
     return new_meta
 
 def unpack(s, sep=','):
+    # let it be known: this is crazypants
+    # ... sigh
     if not s:
         return []
     s = re.sub(' +', ' ', s).strip()
