@@ -3,9 +3,9 @@
 import csv
 import json
 
-img = 'https://raw.githubusercontent.com/edsu/irads/master/site/images/{}.png'
+image_base = 'https://raw.githubusercontent.com/umd-mith/irads/master/site/'
 
-out = csv.DictWriter(open('ads.csv', 'w'), fieldnames=[
+out = csv.DictWriter(open('site/index.csv', 'w'), fieldnames=[
     'id',
     'image',
     'title',
@@ -49,12 +49,19 @@ def title(s):
 
 out.writeheader()
 
-for item in json.load(open('ads.json')):
+for item in json.load(open('site/index.json')):
     if not item['text']:
         continue
+
+    # some ads lacked screenshots
+    if item['image']:
+        image = image_base + item['image']
+    else:
+        image = None
+
     out.writerow({
         'id': item['id'],
-        'image': img.format(item['id']),
+        'image': image,
         'title': title(item['text']),
         'description': item['text'].strip(),
         'facebook_url': item['url'],

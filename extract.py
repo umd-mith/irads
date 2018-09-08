@@ -73,6 +73,7 @@ def extract_ocr(img_file):
             logging.error('unable to ocr %s: %s', img_file, e)
 
 def extract_metadata(ocr_file):
+    logging.info('extracting metadata from %s', ocr_file)
     txt = open(ocr_file).read()
 
     # if 02.txt exists then the text from 00.txt ran over into 01.txt
@@ -204,29 +205,40 @@ def unpack(s, sep=','):
     return data
 
 def write_site():
+    if not os.path.isdir('site/images'):
+        os.makedirs('site/images')
     items = []
     for ocr in glob('data/*/*-00.txt'):
-        m = extract_metadata(ocr)
-        if not m['id']:
-            logging.warn('missing id %s, skipping', m['pdf'])
-            continue
-
-        post_file = pick_post_image(m['pdf'])
-        if post_file:
-            img_file = 'images/{:04d}.png'.format(m['id'])
-            if not os.path.isfile('site/' + img_file):
-                crop(post_file, 'site/' + img_file)
-            m['image'] = img_file
-        else:
-            m['image'] = None
-            logging.info('no post image found for id=%s %s', m['id'], m['pdf'])
-
-        logging.info('got metadata for id=%s %s', m['id'], m['pdf'])
-        items.append(m)
+        i = write_item(ocr)
+        if i is not None:
+            items.append(i)
 
     with open('site/index.json', 'w') as fh:
         json.dump(items, fh, indent=2)
         logging.info('wrote site/index.json with %s items', len(items))
+
+def write_item(ocr_file):
+    m = extract_metadata(ocr_file)
+    if not m['id']:
+        logging.warn('missing id %s, skipping', m['pdf'])
+        return None
+
+    post_file = pick_post_image(m['pdf'])
+    logging.info('found post image %s', post_file)
+    if post_file:
+        img_file = 'images/{}.png'.format(m['id'])
+        if not os.path.isfile('site/' + img_file):
+            crop(post_file, 'site/' + img_file)
+            logging.info('cropped %s as site/%s', post_file, img_file)
+        else:
+            logging.warn('cropped image file already exists site/%s', img_file)
+        m['image'] = img_file
+    else:
+        m['image'] = None
+        logging.info('no post image found for id=%s %s', m['id'], m['pdf'])
+
+    logging.info('got metadata for id=%s %s', m['id'], m['pdf'])
+    return m
 
 def crop(path, new_path):
     logging.info('cropping %s as %s', path, new_path)
@@ -267,9 +279,11 @@ def crop(path, new_path):
         new_img.save(new_path)
 
 def pick_post_image(pdf_file):
+    logging.info('picking post image for %s', pdf_file)
     stem = pdf_file.replace('.pdf', '*.png')
     files = glob(stem)
     if len(files) == 1:
+        logging.warn('looks like missing extracted post image for %s', pdf_file)
         return None
     files.sort()
     return files[-1]

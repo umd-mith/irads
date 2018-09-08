@@ -19,13 +19,17 @@ repository, or at this URL:
 
 https://raw.githubusercontent.com/edsu/irads/master/site/index.json
 
+There is also a CSV version available:
+
+https://raw.githubusercontent.com/edsu/irads/master/site/index.csv
+
 Each ad is a JSON object in `index.json` and looks something like this:
 
 ```json
 {
   "id": 374,
   "pdf": "data/2015-06/P(1)0000054.pdf",
-  "image": "site/images/374.png",
+  "image": "images/374.png",
   "text": "Join us because we care. Black matters.\n",
   "url": "https://www.facebook.com/BlaCk-Matters-1579673598947501/",
   "impressions": 137,
