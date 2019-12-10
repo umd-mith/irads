@@ -105,7 +105,7 @@ for item in json.load(open('site/index.json')):
         'field_of_study': unpack(item, 'targeting', 'field_of_study'),
         'match': unpack(item, 'targeting', 'people_who_match'),
         'exclude': unpack(item, 'targeting', 'excluded_connections'),
-        'age': unpack(item, 'age'),
+        'age': unpack(item, 'targeting', 'age'),
         'language': unpack(item, 'targeting', 'language'),
         'placement': unpack(item, 'targeting', 'placements'),
     })
